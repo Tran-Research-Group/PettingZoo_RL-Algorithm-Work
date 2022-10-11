@@ -225,7 +225,8 @@ class ParallelAtariEnv(ParallelEnv, EzPickle):
                 if agent in self.agents
             }
             
-        '''def step(self, action_dict_human):
+        ''' MODIFIED CODE
+    def step(self, action_dict_human):
         actions = np.zeros(self.max_num_agents, dtype=np.int32)
         for i, agent in enumerate(self.possible_agents):
             if agent in action_dict_human:
